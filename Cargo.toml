@@ -1,0 +1,13 @@
+[package]
+name = "budplate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+budlang = { git = "https://github.com/khonsulabs/budlang.git", branch = "main" }
+fluent = "0.16.0"
+fluent-bundle = "0.15.2"
+unic-langid = "0.9.1"
+
+# [patch."https://github.com/khonsulabs/budlang.git"]
+# budlang = { path = "../budlang/budlang" }
