@@ -1,6 +1,6 @@
 #![doc = include_str!("../README.md")]
 
-use std::{borrow::Cow, collections::HashMap, fmt::Write, ops::Range};
+use std::{borrow::Cow, fmt::Write, ops::Range};
 
 use budlang::{
     vm::{ir::Function, Destination, FaultKind, Instruction, NativeFunction, Symbol, Value},

@@ -63,9 +63,10 @@ the rendered output, but are still useful for control flow:
 ```rust
 use budplate::Template;
 
-let rendered = Template::from("Hello, {{= name }}!")
-                    .render_with([("name", "World")]).unwrap();
-assert_eq!(rendered, "Hello, World!");
+let rendered = Template::from(
+                   "Easy as {{ loop for i := 1 to 3 inclusive }}{{= i }}{{ end }}")
+               .render().unwrap();
+assert_eq!(rendered, "Easy as 123");
 ```
 
 ## Whitespace trimming
